@@ -82,7 +82,9 @@ public class XOXO {
 				
 	}//X winning conditions
 	
-public static void Place(String[] Grid, int position){
+public static void Place(String[] Grid, int position){ // Thandolwethu.
+	
+	/**This method is for taking the user input and place the place X or O in that position.*/
 		
 	if(position >= 1 && position <= 9){ // Check whether the user input is between the 1 to 9.
 			
@@ -129,6 +131,8 @@ public static void userInput(){
 	System.out.print("Which position you want to play at? : ");
 	
 	int position = in.nextInt(); // Taking the user's input and assigning it to the variable position.
+	
+	Place(position); // call-site of the method to place the user's playing move.
 }
 		
 }//XOXO class
