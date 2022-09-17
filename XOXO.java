@@ -31,54 +31,54 @@ public class XOXO {
         System.out.println(cpumove); // displays random number
 	}
     
-    public static boolean X_wins(board){
+    	public static boolean X_wins(board){
 	if(board[0][0] = 'X' && board[0][2] = 'X' && board[0][4] = 'X'){	//checks if there are three X in the first row going towards right
 		return True	//if true, X wins
 	}else{
 		return False
 	}
 	
-	if(board[2][0] = 'X' && board[2][2] = 'X' && board[2][4] = 'X'){	//checks if there are three X in the second row going towards the right
+	if(board[1][0] = 'X' && board[1][2] = 'X' && board[1][4] = 'X'){	//checks if there are three X in the second row going towards the right
 		return True	//if true, X wins
 	}else{
 		return False
 	}
 				
-	if(board[4][0] = 'X' && board[4][2] = 'X' && board[4][4] = 'X'){	//checks if there are three X in the third row going towards the right
+	if(board[2][0] = 'X' && board[2][2] = 'X' && board[2][4] = 'X'){	//checks if there are three X in the third row going towards the right
 		return True	//if true, X wins
 	}else{
 		return False
 	}
 			
-	if(board[0][0] = 'X' && board[2][0] = 'X' && board[4][0] = 'X'){	//checks if there are three X in the first coloumn going down
+	if(board[0][0] = 'X' && board[1][0] = 'X' && board[2][0] = 'X'){	//checks if there are three X in the first coloumn going down
 		return True	//if true, X wins
 	}else{
 		return False
 	}
 				
-	if(board[0][2] = 'X' && board[2][2] = 'X' && board[4][2] = 'X'){	//checks if there are three X in the second coloumn going down
+	if(board[0][2] = 'X' && board[1][2] = 'X' && board[2][2] = 'X'){	//checks if there are three X in the second coloumn going down
 		return True	//if true, X wins
 	}else{
 		return False
-			}
+	}
 				
-	if(board[0][4] = 'X' && board[2][4] = 'X' && board[4][4] = 'X'){	//checks if there are three X in the third coloumn going down
-		return True	//if true, X wins
-	}else{
-		return False
-			}
-		
-	if(board[0][0] = 'X' && board[2][2] = 'X' && board[4][4] = 'X'){	//checks if there are three X diagonally starting from the top left corner to the bottom right corner
+	if(board[0][4] = 'X' && board[1][4] = 'X' && board[2][4] = 'X'){	//checks if there are three X in the third coloumn going down
 		return True	//if true, X wins
 	}else{
 		return False
 	}
 		
-	if(board[0][4] = 'X' && board[2][2] = 'X' && board[4][0] = 'X'){	//checks if there are three X diagonally starting from the top right corner to the bottom left corner
+	if(board[0][0] = 'X' && board[1][2] = 'X' && board[2][4] = 'X'){	//checks if there are three X diagonally starting from the top left corner to the bottom right corner
 		return True	//if true, X wins
 	}else{
 		return False
-			}
+	}
+				
+	if(board[0][4] = 'X' && board[1][2] = 'X' && board[2][0] = 'X'){	//checks if there are three X diagonally starting from the top right corner to the bottom left corner
+		return True	//if true, X wins
+	}else{
+		return False
+	}
 				
 	}//X winning conditions
 	
