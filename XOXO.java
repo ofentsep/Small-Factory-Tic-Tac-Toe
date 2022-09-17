@@ -24,6 +24,13 @@ public class XOXO {
             }
             return false;
 		}//moveValidation
+	
+	public static void cpuMove ()
+	{
+        Random random = new Random();  // invokes new random class
+        int cpumove = random.nextInt(9); // generates random number and stores it 
+        System.out.println(cpumove); // displays random number
+	}
     
     public static boolean X_wins(board){
 	if(board[0][0] = 'X' && board[0][2] = 'X' && board[0][4] = 'X'){	//checks if there are three X in the first row going towards right
