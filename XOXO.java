@@ -25,8 +25,7 @@ public class XOXO {
             return false;
 		}//moveValidation
 	
-	public static void cpuMove ()
-	{
+	public static void cpuMove () { //@Wetsi
         Random random = new Random();  // invokes new random class
         int cpumove = random.nextInt(9); // generates random number and stores it 
         System.out.println(cpumove); // displays random number
