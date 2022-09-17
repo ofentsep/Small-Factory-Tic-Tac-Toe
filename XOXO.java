@@ -1,6 +1,6 @@
 public class XOXO {
 
-    public static void gameboard(){
+    public static void gameboard(){ //@Sipho
 
     char[][] board = {{' ', '|', ' ', '|', ' '},
                       {'_', ' ', '_', ' ', '_'}, 
@@ -17,7 +17,7 @@ public class XOXO {
     
 	}//gameBoard
 
-    public static boolean moveValidation (int moveidxRow, int moveidxCol, char[][] board2D){
+    public static boolean moveValidation (int moveidxRow, int moveidxCol, char[][] board2D){ //@Prince
         char position = board2D[moveidxRow][moveidxCol];
         if(position == '_' || position == ' '){//If space on board is unoccupied
             return true;
