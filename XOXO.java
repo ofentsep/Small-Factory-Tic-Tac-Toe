@@ -1,6 +1,19 @@
 public class XOXO {
 
     public static void gameboard(){ //@Sipho
+	 /**
+
+        gameBoard
+        _|_|_
+        _|_|_
+         | |
+
+        Positions:
+        [0, 0], [0, 2], [0, 4]
+        [1, 0], [1, 2], [1, 4]
+        [2, 0], [2, 2], [2, 4]
+
+         */
 
 	char[][] board = {{'_', '|', '_', '|', '_'},
 			 {'_', '|', '_', '|', '_'},  
@@ -29,7 +42,7 @@ public class XOXO {
         System.out.println(cpumove); // displays random number
 	}
     
-    	public static boolean X_wins(board){
+    	public static boolean X_wins(board){ //@Sipho
 	if(board[0][0] = 'X' && board[0][2] = 'X' && board[0][4] = 'X'){	//checks if there are three X in the first row going towards right
 		return True	//if true, X wins
 	}else{
@@ -80,7 +93,7 @@ public class XOXO {
 				
 	}//X winning conditions
 	
-public static void Place(String[] Grid, int position){ // Thandolwethu.
+public static void Place(String[] Grid, int position){ //@Thandolwethu.
 	
 	/**This method is for taking the user input and place the place X or O in that position.*/
 		
@@ -122,7 +135,7 @@ public static void Place(String[] Grid, int position){ // Thandolwethu.
 			//break;
 		}
 	
-public static void userInput(){
+public static void userInput(){ //@Thando
 	
 	Scanner in = new Scanner(System.in); // initialising the scanner class.
 	
