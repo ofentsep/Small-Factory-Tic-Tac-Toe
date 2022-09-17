@@ -81,5 +81,54 @@ public class XOXO {
 			}
 				
 	}//X winning conditions
+	
+public static void Place(String[] Grid, int position){
+		
+	if(position >= 1 && position <= 9){ // Check whether the user input is between the 1 to 9.
+			
+		switch(position){
+				
+			case 1: Grid[0] = "X"; // Placing the user move at position 1 of the board.
+					break;
+				
+				
+			case 2: Grid[1] = "X"; //Placing the user move at position 2 of the board.
+					break;
+				
+			case 3: Grid[2] = "X"; //Placing the user move at position 3 of the board.
+					break;
+				
+			case 4: Grid[3] = "X"; //Placing the user move at position 4of the board.
+					break;
+				
+			case 5: Grid[4] = "X"; //Placing the user move at position 5 of the board.
+					break;
+				
+			case 6: Grid[5] = "X"; //Placing the user move at position 6 of the board.
+					break;
+				
+			case 7: Grid[6] = "X"; //Placing the user move at position 7 of the board.
+					break;
+				
+			case 8: Grid[7] = "X"; //Placing the user move at position 8 of the board.
+					break;
+				
+			case 9: Grid[8] = "X"; //Placing the user move at position 9 of the board.
+					break;
+			}
+		}
+		else{
+			System.out.println("The position entered is not valid nt this board game.");
+			//break;
+		}
+	
+public static void userInput(){
+	
+	Scanner in = new Scanner(System.in); // initialising the scanner class.
+	
+	System.out.print("Which position you want to play at? : ");
+	
+	int position = in.nextInt(); // Taking the user's input and assigning it to the variable position.
+}
 		
 }//XOXO class
