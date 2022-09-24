@@ -53,6 +53,42 @@ public class XOXO {
 	}
 	printBoard(board); 
 	}//Xplacement
+	
+	public static boolean O_wins(board)
+    {
+        if (board[0][0]= 'O' && board[0][1]= 'O' && board[0][2]='O' ){
+            return true; // CHECK FIRST ROW LEFT TO RIGHT
+        } 
+       
+        if (board[1][0]= 'O' && board [1][1]='O' && board[1][2] = 'O'){
+            return true; // CHECK SECOND ROW LEFT TO RIGHT
+        } 
+        
+        if (board[2][0] = 'O' && board [2][1] = 'O' && board[2][2]= 'O'){
+            return true; // CHECK THIRD ROW LEFT TO RIGHT
+        } 
+        
+        if (board[0][0] = 'O' && board [1][0] = 'O' && board[2][0] = 'O'){
+            return true; // CHECK FIRST COLOUMN TOP TO BOTTOM
+        } 
+       
+        if (board [0][2] = 'O' && board [1][2]= 'O' && board[2][2] = 'O'){
+            return true; // CHECK SECOND COLOUMN TOP TO BOTTOM
+        } 
+        
+        if (board[0][2] = 'O' && board [1][2]= 'O' && board[2][2]= 'O') {
+            return true; // CHECK THIRD COLOUMN TOP TO BOTTOM
+        } 
+       
+        if (board[0][0] = 'O' && board [1][1]= 'O' && board[2][2]= 'O' ){
+            return true; // CHECK DIAGONAL FROM TOP LEFT TO BOTTOM RIGHT
+        }
+
+        if (board[0][2] = 'O' && board [1][1]= 'O' && board[2][0]= 'O' ){
+            return true; // CHECK DIAGONAL FROM TOP RIGHT TO BOTTOM LEFT
+        } 
+        return false;
+    }
 
 	
 	public static void printBoard(char[][] board){
