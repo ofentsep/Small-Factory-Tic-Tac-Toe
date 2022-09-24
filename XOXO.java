@@ -82,9 +82,9 @@ public class XOXO {
 	
 	public static boolean xWins(board){ 
 	if(board[0][0] = 'X' && board[0][1] = 'X' && board[0][2] = 'X'){	//checks if there are three X in the first row going towards right
-		return True	//if true, X wins
+		return True;	//if true, X wins
 	}else{
-		return False
+		return False;
 	}
 	if(board[1][0] = 'X' && board[1][1] = 'X' && board[1][2] = 'X'){	//checks if there are three X in the second row going towards the right
 		return True	//if true, X wins
@@ -92,34 +92,34 @@ public class XOXO {
 		return False
 	}			
 	if(board[2][0] = 'X' && board[2][1] = 'X' && board[2][2] = 'X'){	//checks if there are three X in the third row going towards the right
-		return True	//if true, X wins
+		return True;	//if true, X wins
 	}else{
-		return False
+		return False;
 	}		
 	if(board[0][0] = 'X' && board[1][0] = 'X' && board[2][0] = 'X'){	//checks if there are three X in the first coloumn going down
-		return True	//if true, X wins
+		return True;	//if true, X wins
 	}else{
-		return False
+		return False;
 	}			
 	if(board[0][1] = 'X' && board[1][1] = 'X' && board[2][1] = 'X'){	//checks if there are three X in the second coloumn going down
-		return True	//if true, X wins
+		return True;	//if true, X wins
 	}else{
-		return False
+		return False;
 	}			
 	if(board[0][2] = 'X' && board[1][2] = 'X' && board[2][2] = 'X'){	//checks if there are three X in the third coloumn going down
-		return True	//if true, X wins
+		return True;	//if true, X wins
 	}else{
-		return False
+		return False;
 	}	
 	if(board[0][0] = 'X' && board[1][1] = 'X' && board[2][2] = 'X'){	//checks if there are three X diagonally starting from the top left corner to the bottom right corner
-		return True	//if true, X wins
+		return True;	//if true, X wins
 	}else{
-		return False
+		return False;
 	}			
 	if(board[0][2] = 'X' && board[1][1] = 'X' && board[2][0] = 'X'){	//checks if there are three X diagonally starting from the top right corner to the bottom left corner
-		return True	//if true, X wins
+		return True;	//if true, X wins
 	}else{
-		return False
+		return False;
 	}
 	}//X winning conditions
 	
