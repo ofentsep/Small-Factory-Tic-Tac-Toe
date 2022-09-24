@@ -87,9 +87,9 @@ public class XOXO {
 		return False;
 	}
 	if(board[1][0] = 'X' && board[1][1] = 'X' && board[1][2] = 'X'){	//checks if there are three X in the second row going towards the right
-		return True	//if true, X wins
+		return True;	//if true, X wins
 	}else{
-		return False
+		return False;
 	}			
 	if(board[2][0] = 'X' && board[2][1] = 'X' && board[2][2] = 'X'){	//checks if there are three X in the third row going towards the right
 		return True;	//if true, X wins
