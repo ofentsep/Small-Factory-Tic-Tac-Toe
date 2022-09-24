@@ -8,47 +8,48 @@ public class XOXO {
 	 | |
 	*/
 	public static void main(String[]args){
-	char[][] board = {{' ', '|', ' ', '|', ' '},
-			  {'-', '+', '-', '+', '-'},  
-			  {' ', '|', ' ', '|', ' '},
-			  {'-', '+', '-', '+', '-'},
+	char[][] board = {{' ', '|', ' ', '|', ' '},			 
+			  {' ', '|', ' ', '|', ' '},		  
 			  {' ', '|', ' ', '|', ' '}};
 	printBoard(board);
-	Xplacement(board);
+	placePiece(board);
 	}//main
 	
-	public static void Xplacement(char[][] board){
-	Scanner input = new Scanner(System.in);	//Creating a new scanner object
-	System.out.print("Placement: ");	//takes in position number
-	int placement = input.nextInt();
+	public static void placePiece (int pos, int player, char [][] board){
+		char piece;
+        	if (player == 1){
+            		piece = 'X'; // If human player(1), use X as piece
+        	} else {
+            		piece = 'O'; // if computer (2),use O as piece
+        	} //If statement
 	
 	switch(placement){	//takes placement, then case number = placement
 		case 1:
-			board[0][0] = 'X';
+			board[0][0] = piece;
 			break;
 		case 2:
-			board[0][2] = 'X';
+			board[0][2] = piece;
 			break;
 		case 3:
-			board[0][4] = 'X';
+			board[0][4] = piece;
 			break;
 		case 4:
-			board[2][0] = 'X';
+			board[2][0] = piece;
 			break;
 		case 5:
-			board[2][2] = 'X';
+			board[2][2] = piece;
 			break;
 		case 6:
-			board[2][4] = 'X';
+			board[2][4] = piece;
 			break;
 		case 7:
-			board[4][0] = 'X';
+			board[4][0] = piece;
 			break;
 		case 8:
-			board[4][2] = 'X';
+			board[4][2] = piece;
 			break;
 		case 9:
-			board[4][4] = 'X';
+			board[4][4] = piece;
 			break;
 	}
 	printBoard(board); 
@@ -57,6 +58,18 @@ public class XOXO {
 	
 	
 	public static void printBoard(char[][] board){
+		
+		 /**
+
+
+
+
+      		Positions:
+        	[0][0], [0][1], [0][2]
+        	[1][0], [1][1], [1][2]
+        	[2][0], [2][1], [2][2]
+
+         	*/
 	for(char[] row:board){	//for each array in the board
 		for(char character: row)
 		{	//for loop that loops for each character in each row
@@ -67,7 +80,7 @@ public class XOXO {
 	}
 	}//printBoard	
 	
-	public static boolean X_wins(board){ 
+	public static boolean xWins(board){ 
 	if(board[0][0] = 'X' && board[0][1] = 'X' && board[0][2] = 'X'){	//checks if there are three X in the first row going towards right
 		return True	//if true, X wins
 	}else{
@@ -110,7 +123,7 @@ public class XOXO {
 	}
 	}//X winning conditions
 	
-	public static boolean O_wins(board)
+	public static boolean oWins(board)
     {
         if (board[0][0]= 'O' && board[0][1]= 'O' && board[0][2]='O' ){
             return true; // CHECK FIRST ROW LEFT TO RIGHT
