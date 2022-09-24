@@ -54,6 +54,18 @@ public class XOXO {
 	printBoard(board); 
 	}//Xplacement
 	
+	
+	
+	public static void printBoard(char[][] board){
+	for(char[] row:board){	//for each array in the board
+		for(char character: row)
+		{	//for loop that loops for each character in each row
+			System.out.print(character);	//print out each character
+		}
+			System.out.println();	//prints a line after each row
+			
+	}
+	}//printBoard	
 	public static boolean O_wins(board)
     {
         if (board[0][0]= 'O' && board[0][1]= 'O' && board[0][2]='O' ){
@@ -88,17 +100,5 @@ public class XOXO {
             return true; // CHECK DIAGONAL FROM TOP RIGHT TO BOTTOM LEFT
         } 
         return false;
-    }
-
-	
-	public static void printBoard(char[][] board){
-	for(char[] row:board){	//for each array in the board
-		for(char character: row)
-		{	//for loop that loops for each character in each row
-			System.out.print(character);	//print out each character
-		}
-			System.out.println();	//prints a line after each row
-			
-	}
-	}//printBoard	
+    } // end of O wins
 } //End of XOXO class
