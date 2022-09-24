@@ -158,4 +158,83 @@ public class XOXO {
         } 
         return false;
     } // end of O wins
+	public class moveValidation{
+    public static boolean moveValidation (){
+        char [][] board = {{'', ' ', ''},
+                         {' ', ' ', ' '},
+                         {' ', ' ', ' '}};
+        switch(board) 
+        case 1:
+          if ( board[0][0] == ' '){
+            return true; // checks if position 1 is empty
+        }
+        else{
+            return false;
+        }
+
+        case 2:
+          if ( board[0][1] == ' '){
+            return true; //checks if position 2 is empty
+        }
+        else{
+            return false;
+        }
+
+        case 3:
+          if ( board[0][2] == ' '){
+            return true; //checks if position 3 is empty
+        }
+        else{
+            return false;
+        }
+
+        case 4:
+          if ( board[1][0] == ' '){
+            return true; //checks if position 4 is empty
+        }
+        else{
+            return false;
+        }
+
+        case 5:
+          if ( board[1][1] == ' '){
+            return true; //checks if position 5 is empty
+        }
+        else{
+            return false;
+        }
+
+        case 6:
+          if ( board[1][2] == ' '){
+            return true; //checks if position 6 is empty 
+        }
+        else{
+            return false;
+        }
+
+        case 7:
+         if ( board[2][0] == ' '){
+            return true; //checks if position 7 is empty
+        }
+        else{
+            return false;
+        }
+
+        case 8:
+         if ( board[2][1] == ' '){
+            return true; //checks if position 8 is empty
+        }
+        else{
+            return false;
+        }
+
+        case 9:
+           if ( board[2][2] == ' '){
+            return true; //checks if position 9 is empty
+        }
+        else{
+            return false;
+        }    
+    }
+} // end of move validation 
 } //End of XOXO class
