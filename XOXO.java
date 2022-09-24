@@ -28,28 +28,28 @@ public class XOXO {
 			board[0][0] = piece;
 			break;
 		case 2:
-			board[0][2] = piece;
+			board[0][1] = piece;
 			break;
 		case 3:
-			board[0][4] = piece;
+			board[0][2] = piece;
 			break;
 		case 4:
-			board[2][0] = piece;
+			board[1][0] = piece;
 			break;
 		case 5:
-			board[2][2] = piece;
+			board[1][1] = piece;
 			break;
 		case 6:
-			board[2][4] = piece;
+			board[1][2] = piece;
 			break;
 		case 7:
-			board[4][0] = piece;
+			board[2][0] = piece;
 			break;
 		case 8:
-			board[4][2] = piece;
+			board[2][1] = piece;
 			break;
 		case 9:
-			board[4][4] = piece;
+			board[2][2] = piece;
 			break;
 	}
 	printBoard(board); 
