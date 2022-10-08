@@ -17,10 +17,8 @@ public class XOXO {
 		
         char position = board[positions[0]][positions[1]];
         if(position == ' ') { //If space on board is unoccupied
-            System.out.println("Empty");
 			return true;
             }
-			System.out.println("Occupied");
             return false;
 		}//moveValidation
 		
