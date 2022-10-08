@@ -1,10 +1,33 @@
-package com.small_factory.xoxo;
+package com.example.xoxo2;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import com.example.xoxo2.R;
 
 public class MainActivity extends AppCompatActivity {
+    
+    boolean gameActive = true;
+
+    // Player representation 
+    // 0 - X 
+    // 1 - O 
+    int activePlayer = 0;
+    int[] gameState = {2, 2, 2, 2, 2, 2, 2, 2, 2};
+
+    // State meanings: 
+    // 0 - X 
+    // 1 - O 
+    // 2 - Null 
+    // put all win positions in a 2D array 
+    int[][] winPositions = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8},
+            {0, 3, 6}, {1, 4, 7}, {2, 5, 8},
+            {0, 4, 8}, {2, 4, 6}};
+    public static int counter = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
     
     
-       public void playerTap(View view) { // Thandolwethu
+     public void playerTap(View view) { // Thandolwethu
         ImageView img = (ImageView) view;
         int tappedImage = Integer.parseInt(img.getTag().toString());
 
