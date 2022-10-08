@@ -110,5 +110,10 @@ public class MainActivity extends AppCompatActivity {
         TextView status = findViewById(R.id.status);
         status.setText("X's Turn - Tap to play");
     }
+     @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
 
 }
