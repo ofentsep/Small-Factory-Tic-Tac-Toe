@@ -94,7 +94,6 @@ public class XOXOBoard {
 			} //while-loop
 			if(cpuMoveTrack != 5){
 			addXorO(2, position);
-			System.out.printf("Computer moved to position %d\n", position);
 			}
 			return;
 			
@@ -111,11 +110,9 @@ public class XOXOBoard {
 		if(posValid == true){
 			posValid = pValid.moveValidation(board, posConvert(position));
 			addXorO(player1or2, position);
-			System.out.printf("Player1 moved to position %d\n", position);
 			return true;	
 			} //successful move
 		else{
-			System.out.printf("Position %d is occupied\n", position);
 			return false;
 			} //space occupied
 		} //playerMove
