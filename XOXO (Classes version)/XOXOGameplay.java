@@ -78,7 +78,6 @@ public class XOXOGameplay {
 			userin = user.nextLine();
 			switch(userin){
 				case "1":
-				System.out.println("Player 1 goes first, duh, \"1\"?");
 				board.displayboard();
 				while(gameCnt < 5){
 					if(board.winConditions('X') == false && board.winConditions('O') == false){
@@ -90,21 +89,21 @@ public class XOXOGameplay {
 							System.out.println("\nPlayer 1 wins");
 							win = true;
 							gameCnt = 5;
-							break;
+							return;
 							} //player1 wins
 						else{
 							if(board.winConditions('O') == true){
 								System.out.println("\nComputer Wins");
 								win = true;
 								gameCnt = 5;
-								break;
+								return;
 								} //Computer wins
 							else{
 								if(gameCnt >= 5){
 									System.out.print("\nIt's a TIE!");
 									gameCnt = 0;
 									win = true;
-									break;
+									return;
 									} //TIE
 								} //else
 							}
@@ -113,32 +112,32 @@ public class XOXOGameplay {
 				} //while-loop
 			
 				case "2":
-				System.out.println("Player 1 goes first, duh, \"1\"?");
 				board.displayboard();
 				while(gameCnt < 5){
 					if(board.winConditions('X') == false && board.winConditions('O') == false){
 						System.out.println("\nPlayer 1, Choose a position between 1-9: ");
 						player1();
 						gameCnt++;
+						board.displayboard();
 						if(board.winConditions('X') == true){
 							System.out.println("\nPlayer 1 wins");
 							win = true;
 							gameCnt = 5;
-							break;
+							return;
 							} //player1 wins
 						else{
 							if(board.winConditions('O') == true){
 								System.out.println("\nPlayer 2 Wins");
 								win = true;
 								gameCnt = 5;
-								break;
+								return;
 								} //Player2 wins
 							}
 						if(gameCnt >= 5){
 							System.out.print("\nIt's a TIE!");
 							gameCnt = 0;
 							win = true;
-							break;
+							return;
 							} //TIE
 						System.out.println("\nPlayer 2, Choose a position between 1-9: ");
 						player2();
